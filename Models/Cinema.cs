@@ -5,9 +5,12 @@ namespace eTickets.Models
     public class Cinema
     {
         [Key]
-        public string CinemaID { get; set; }
+        public int CinemaID { get; set; }
         public string CinemaLogo { get; set; }
         public string CinemaName { get; set; }
         public string CinemaDescription { get; set; }
+
+        // Relationships
+        public List<Movie> Movies { get; set; }
     }
 }
