@@ -1,25 +1,9 @@
-﻿@*'@' -> switch from view markup to code (whether to print a single value or
-	to write a code block*@
-
-@*
-	Html.DisplayFor() will render the DisplayTemplate that matches the 
-	property's type.
-
-    If it can't find any, I suppose it invokes .ToString().
-*@
-
-@*
-	Glossary:
-		div -> indicates a section in HTML/CSS document
-		a -> defines a hyperlink 
-*@
-
-@*Define Model*@
-@model IEnumerable<Actor>
+﻿@*Define Model*@
+@model IEnumerable<Producer>
 
 @*Define ViewData*@
 @{
-	ViewData["Title"] = "List of Actors";
+	ViewData["Title"] = "List of Producers";
 }
 @*Write code*@
 <div class="row">
